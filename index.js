@@ -1,27 +1,15 @@
 import express from 'express'
-import dotenv from 'dotenv'
-import cors from 'cors'
-import apiRouter from './routers/apiRouter.js'
 
-dotenv.config()
+const app = express();
 
-const app = express()
-app.use(cors())
-app.use(express.json())
-app.use(express.urlencoded({ extended: true }))
+app.get('/', (req, res) => res.send('Home Page Route'));
 
-app.use('/api/v1', apiRouter)
+app.get('/about', (req, res) => res.send('About Page Route'));
 
-app.get('/', (req, res) => {
-  res.send('Home')
-})
-app.get('/about', (req, res) => {
-  res.send('About')
-})
-app.use((err, req, res, next) => {
-  res.status(500).send({message: err.message})
-})
-const port = process.env.PORT || 5000
-app.listen(port, () => {
-  console.log(`Serve at http://localhost:${port}`)
-})
+app.get('/portfolio', (req, res) => res.send('Portfolio Page Route'));
+
+app.get('/contact', (req, res) => res.send('Contact Page Route'));
+
+const port = process.env.PORT || 3000;
+
+app.listen(port, () => console.log(`Server running on ${port}, http://localhost:${port}`));
