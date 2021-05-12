@@ -5,8 +5,8 @@
   "description": "Ecommerce website like amazon",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon server.js",
-    "start": "nodemon server.js"
+    "dev": "nodemon index.js",
+    "start": "nodemon index.js"
   },
   "repository": {
     "type": "git",
