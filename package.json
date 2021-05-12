@@ -1,0 +1,37 @@
+{
+  "name": "amazona",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Ecommerce website like amazon",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/basir/amazona.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/basir/amazona/issues"
+  },
+  "homepage": "https://github.com/basir/amazona#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "8.2.0",
+    "express": "4.17.1",
+    "express-async-handler": "1.1.4",
+    "mailgun-js": "^0.22.0"
+  },
+  "devDependencies": {
+    "eslint": "7.9.0",
+    "eslint-plugin-react": "7.21.2",
+    "nodemon": "2.0.4"
+  },
+  "engines": {
+    "node": "14.16.1",
+    "npm": "6.14.0"
+  }
+}
