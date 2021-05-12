@@ -14,10 +14,10 @@ $ yarn dev
     "subject" : "Billing",
     "brand": "MyBrand",
     "name": "Ani",
-    "nameOne" : "Buku",
+    "productOne" : "Buku",
     "priceOne" : 3000000,
-    "nameTwo" : "Tas",
+    "productTwo" : "Tas",
     "priceTwo" : 1000000,
-    "nameThree" : "Sepatu",
+    "productThree" : "Sepatu",
     "priceThree" : 1500000
 }
